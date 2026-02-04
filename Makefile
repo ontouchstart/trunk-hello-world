@@ -1,5 +1,6 @@
-build:	.cargo/bin/trunk
-	./.cargo/bin/trunk build --release --dist docs --public-url /trunk-hello-world
+test:
+	rm -f screenshot.png
+	cargo test --test test-trunk-hello-world
+	file screenshot.png
 
-.cargo/bin/trunk:
-	cargo install trunk --force --root .cargo
+

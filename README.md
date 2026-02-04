@@ -1,1 +1,1 @@
-https://ontouchstart.github.io/trunk-hello-world
+https://github.com/ontouchstart/trunk-hello-world/actions?query=branch%3Atest
