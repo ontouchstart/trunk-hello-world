@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Hello World</title>
+<link rel="modulepreload" href="/trunk-hello-world-912039a40549a5cd.js" crossorigin="anonymous" integrity="sha384-Bv6/z4iLE1tFTbEX2Mz3vYGMSkt/F24TITW/dTDVzW/SJG0ZQxwLZerEzmt/YzYS"><link rel="preload" href="/trunk-hello-world-912039a40549a5cd_bg.wasm" crossorigin="anonymous" integrity="sha384-slHkupnok7vSQcoI9yot7O0KAM0QcZuQKyxMROAYXnx9IWtVmSHJPzlMfzpQibJB" as="fetch" type="application/wasm"></head>
+<body>
+
+<script type="module">
+import init, * as bindings from '/trunk-hello-world-912039a40549a5cd.js';
+const wasm = await init({ module_or_path: '/trunk-hello-world-912039a40549a5cd_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+</html>
