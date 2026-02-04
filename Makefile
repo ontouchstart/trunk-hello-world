@@ -1,6 +1,6 @@
 test:
 	rm -f screenshot.png
-	cargo test --test test-trunk-hello-world
+	cargo run
 	file screenshot.png
 
 
