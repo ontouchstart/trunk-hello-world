@@ -4,7 +4,5 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-anyhow = "1.0.100"
-console_error_panic_hook = "0.1.7"
 failure = "0.1.8"
 headless_chrome = { git = "https://github.com/ontouchstart/rust-headless-chrome.git", branch = "main", version = "1.0.21", features = ["fetch"] }
